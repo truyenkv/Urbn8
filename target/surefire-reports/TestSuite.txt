@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.176 s <<< FAILURE! - in TestSuite
+VerifyGetManuafactureByID(Urbn8.TestCase.TestManuafactor)  Time elapsed: 0.561 s  <<< FAILURE!
+java.lang.AssertionError: 
+[Extracted: Country, Mfr_CommonName, Mfr_Name, VehicleTypes] 
+Expecting:
+  ["UNITED STATES (USA)",
+    "Concord",
+    "CONCORD ROAD EQUIPMENT MFG., INC.",
+    [{"GVWRFrom":"Class 1C: 4,001 - 5,000 lb (1,814 - 2,268 kg)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":true,"Name":"Truck "},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Trailer"},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Incomplete Vehicle"},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Off Road Vehicle"}]]
+to contain exactly (and in same order):
+  ["UNITED STATES (USA)",
+    "Concord",
+    "CONCORD ROAD EQUIPMENT MFG., INC.",
+    [{"IsPrimary":true,"Name":"Truck "},{"IsPrimary":false,"Name":"Trailer"},{"IsPrimary":false,"Name":"Incomplete Vehicle"},{"IsPrimary":false,"Name":"Off Road Vehicle"}]]
+but some elements were not found:
+  [[{"IsPrimary":true,"Name":"Truck "},{"IsPrimary":false,"Name":"Trailer"},{"IsPrimary":false,"Name":"Incomplete Vehicle"},{"IsPrimary":false,"Name":"Off Road Vehicle"}]]
+and others were not expected:
+  [[{"GVWRFrom":"Class 1C: 4,001 - 5,000 lb (1,814 - 2,268 kg)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":true,"Name":"Truck "},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Trailer"},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Incomplete Vehicle"},{"GVWRFrom":"Class 1A: 3,000 lb or less (1,360 kg or less)","GVWRTo":"Class 8: 33,001 lb and above (14,969 kg and above)","IsPrimary":false,"Name":"Off Road Vehicle"}]]
+
+	at Urbn8.TestCase.TestManuafactor.VerifyGetManuafactureByID(TestManuafactor.java:52)
+
