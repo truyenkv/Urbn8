@@ -8,17 +8,7 @@ import java.util.HashMap;
 
 public class BaseAPI {
     private RequestSpecification requestSpecification;
-    private HashMap<String, Object> headers;
     private ReadProperties readPro = ReadProperties.getInstance();
-
-
-    public HashMap<String, Object> SetHeaderDefault() {
-        headers = new HashMap<String, Object>();
-        headers.put("", "");
-        headers.put("", "");
-        headers.put("", "");
-        return headers;
-    }
 
     protected RequestSpecification requestSpec(){
         requestSpecification = RestAssured.given();
