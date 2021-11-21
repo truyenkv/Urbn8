@@ -27,7 +27,7 @@ public class TestManuafactor {
 
     @Test(priority = 2)
     public void VerifyTheOneManuafactureExistedInList()  {
-        assertThat(manuafactureEngine.isManuafactureExist(Data.MANUAFACTURENAME)).isTrue();
+        assertThat(manuafacture).isNotNull();
     }
 
     @Test(priority = 3)

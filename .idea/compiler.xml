@@ -7,8 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Urbn8" />
         <module name="Urbn8API" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Urbn8" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
